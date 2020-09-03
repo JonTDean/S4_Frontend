@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Welcome to S5 Alpha </title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/form.css"/>
+
+    <!-- JS Scripts -->
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.23.0/dist/phaser.js"></script>
+    <script src="src/index.js" defer></script>
+    <script src="src/Game/preLoader.js"></script>
+    <script src="src/Game/mainGame.js" ></script>
+    <script src="src/Game/playGame.js" ></script>
+  </head>
+  <body>
+      <!-- Navbar Area -->
+    <nav id="navHeader"> 
+      <!-- Options for NavBar Area -->
+      <ul class="ulNav">
+        <!-- Whatever page the user is on should be highlighted -->
+        <li class="liNav" id="projectName"><a href="./index.html"> Sixty Seconds to Slay Skeleking </a></li>
+      </ul>  
+    </nav>
+
+    <!-- Main Div Area -->
+    <div id="mainDiv" style="justify-content: center;"> 
+
+      <div id="scoreDiv" class="hidden">
+        <form id="scoreForm" class="hidden">
+          <label class="labelText" for="score">Score:</label>
+          <input class="inputText" id="score" type="text" name="score" placeholder="12345" />
+          <label class="labelText" for="">Name:</label>
+          <input class="inputText" id="name" type="text" name="name" placeholder="ABC" />
+          <input id="scoreButton" class="button" href="#popup1" type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer Area-->
+    <footer id="footer">
+      <a href="https://github.com/JonTDean">Copyright © 2020 E.O.E. | Made by: Jonathan T. Dean</a>
+    </footer>
+  </body>
+</html>

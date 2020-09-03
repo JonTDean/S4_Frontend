@@ -1,0 +1,216 @@
+/* Language Packs */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Sahitya&display=swap');
+
+/* Dress up logic */
+/* Global Styles */
+body {
+    font-family: 'Sahitya', serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    transition: color 250ms ease-in-out, 
+    transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+a:hover{
+    color: #A2A3BB;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Nav Header Styles */
+nav#navHeader{
+    color: aliceblue;
+    background-color: black;
+
+    display: flex;
+    list-style: none;
+}
+
+ul.ulNav {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+
+    display: flex;
+}
+
+li.liNav {
+    display: inline;
+    margin: 20px;
+}
+
+li.liNav#projectName{
+    font-size: 2em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+li.liNav#end{
+    justify-content: right;
+}
+
+/* Main Page Meat */
+div#mainDiv{
+    display: grid;
+    grid-template-areas:"a a a a"
+                        "b b b b"
+                        "b b b b";
+                        /* "a a a a"
+                        "b b b b"
+                        "b b b b"
+                        "c c c c"
+                        "c c c c"; */
+    column-gap: 30px;
+    row-gap: 10px;
+
+    padding: 8em;
+}
+
+    /* Main Div Insides */
+    div#welcomeDiv{
+        grid-area: a;
+        padding-left: 2em;
+
+        text-align: center;
+    }
+
+    /* About Div Insides */
+
+    div#signupDiv{
+        grid-area: b;
+
+        border-radius: 1em;
+        background-color: #ebebeb;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+        
+        padding: 2em;
+
+        /* text-align: center; */
+    }
+
+    /* Login / Signup Div */
+        /* Login Forms */
+        p.login_header{
+            font-size: 1.5em;
+            font-weight: bold;
+
+            /* text-align: center; */
+        }
+
+        form#login_form{
+            padding: 1em;
+        }
+            /* LOGIN BUTTON STYLING */
+            input#login_button{
+                display: inline-block;
+                border: none;
+                border-radius: 5px;
+                padding: 1rem 2rem;
+                margin: 0;
+                text-decoration: none;
+                background: #36622d;
+                color: #ffffff;
+                font-family: sans-serif;
+                font-size: 1rem;
+                cursor: pointer;
+                text-align: center;
+                transition: background 250ms ease-in-out, 
+                            transform 150ms ease;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            input#login_button:hover,
+            input#login_button:focus {
+                background: #AB2346;
+            }
+
+            input#login_button:focus {
+                outline-offset: -4px;
+            }
+
+            input#login_button:active {
+                transform: scale(0.99);
+            }
+
+        label.form_login_text{
+            font-weight: bold;
+        }
+
+        input[type=text].login_text{
+            text-decoration: none;
+
+            padding: .5em;
+            height: 2em;
+            width: 95%;
+            position: relative;
+            left: 0;
+            outline: none;
+
+            border: 1px solid #cdcdcd;
+            border-color: #ebebeb;
+            border-radius: 5px;
+
+            background-color: #ffffff;
+            font-size: 16px;
+        }
+
+        /* SIGN UP BUTTON */
+        button#signup_button{
+            display: inline-block;
+            border: none;
+            border-radius: 5px;
+            padding: 1rem 2rem;
+            margin: 0;
+            text-decoration: none;
+            background: #36622d;
+            color: #ffffff;
+            font-family: sans-serif;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+            transition: background 250ms ease-in-out, 
+                        transform 150ms ease;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        button#signup_button:hover,
+        button#signup_button:focus {
+            background: #2aaa11;
+        }
+
+        button#signup_button:focus {
+            outline: 1px solid #fff;
+            outline-offset: -4px;
+        }
+
+        button#signup_button:active {
+            transform: scale(0.99);
+        }
+
+/* Footer Styles */
+
+footer#footer{
+    color: wheat;
+    background-color: black;
+    font-size: .8em;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Welcome to S5 Alpha </title>
+
+    <!-- No Favicon Fix -->
+    <link rel="shortcut icon" href="">
+
+    <!-- Styles -->
+    <link rel ="stylesheet" href="css/normalize.css" />
+    <link rel ="stylesheet" href="css/index.css" />
+    <!-- JS Scripts -->
+    <script src="src/index.js" defer></script>
+
+  </head>
+
+  <!-- JS WON'T COMPLETE UNLESS SCORE FORM EXISTS WHY??? -->
+  <dummy id="scoreForm"></dummy>
+  
+  
+  <body>
+    <!-- Navbar Area -->
+    <nav id="navHeader"> 
+      <!-- Options for NavBar Area -->
+      <ul class="ulNav">
+        <!-- Whatever page the user is on should be highlighted -->
+        <li class="liNav" id="projectName"><a href="./index.html"> Sixty Seconds to Slay Skeleking </a></li>
+      </ul>  
+    </nav>
+
+    <!-- Main Div Area -->
+    <div id="mainDiv"> 
+      
+      <!-- Welcome Div -->
+      <div id="welcomeDiv">
+        <p> Welcome to S<sup>5</sup>, the current version is 0.0.9 </p>
+      </div>
+      
+      <!-- Site Explanation -->
+      <div id="aboutDiv">
+        <p> Changelog: </p>
+        <ol>
+          <li> Front Page Created 07/06/2020 </li>
+          <li> SPA Created 07/06/2020 </li>
+          <li> Score Board Created 07/08/2020 </li>
+          <li> Parallax Logic Finished 07/08/2020 </li>
+          <li> Physics Engine Created 07/08/2020 </li>
+          <li> Enemy Logic Started 07/09/2020 </li>
+          <li> Enemy Logic Finished 07/09/2020 </li>
+          <li> CRUD Tie-Up 07/09/2020 </li>
+          <li> Skeleking Rises 07/10/2020</li>
+        </ol>
+      </div>
+
+      <!-- Play Container for Divs -->
+      <div id="playContainer">
+        <p class="playHeader">Interested in Playing?</p>
+        <a href="./game.html"><button id="playButton">Play</button></a>
+      </div>
+    </div>
+
+    <!--  Game Container -->
+    <div id="scoreContainer">
+      <h2 id="scoreH2">Score Board</h2>
+      <!-- Score Board -->
+      <div id="scoreBoard">
+        <ol id="scoreList">
+          <p id="noScores" style="text-align: center; padding-right: 2em;"> No one has played yet! :( </p>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Footer Area-->
+    <footer id="footer"><a href="https://github.com/JonTDean">Copyright © 2020 E.O.E. | Made by: Jonathan T. Dean</a></footer>
+  </body>
+</html>

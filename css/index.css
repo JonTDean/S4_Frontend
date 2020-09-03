@@ -1,0 +1,343 @@
+/* Language Packs */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Sahitya&family=Cinzel&display=swap');
+
+/* Dress up logic */
+body {
+    font-family: 'Sahitya', serif;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    transition: color 250ms ease-in-out, 
+    transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+a:hover{
+    color: #A2A3BB;
+}
+
+/* Nav Header Styles */
+nav#navHeader{
+    color: aliceblue;
+    background-color: black;
+
+    display: flex;
+    list-style: none;
+}
+
+ul.ulNav {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: .5em;
+
+    display: flex;
+}
+
+li.liNav {
+    display: inline;
+    margin: 20px;
+}
+
+li.liNav#projectName{
+    font-size: 2em;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+li.liNav#end{
+    justify-content: right;
+}
+
+/* Main Page Meat */
+div#mainDiv{
+    display: grid;
+    grid-template-areas:"a a a a"
+                        "b b c c"
+                        "b b c c";
+
+    column-gap: 20px;
+    row-gap: 10px;
+
+    padding: 1em;
+}
+
+    /* Main Div Insides */
+    div#welcomeDiv{
+        grid-area: a;
+        padding-left: 2em;
+    }
+
+    /* About Div Insides */
+    div#aboutDiv{
+        /* border:.2em solid #f3f3f3; */
+        border-radius: 1em;
+        background-color: #ebebeb;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+
+        grid-area: b;
+
+        padding: 1em;
+        overflow: scroll;
+        max-height: 10em;
+    }
+
+
+    /* Login / Signup Div */
+    div#playContainer{
+        /* border: .2em solid #f3f3f3; */
+        border-radius: 1em;
+        background-color: #ebebeb;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+        
+        grid-area: c;
+
+        padding: 1em;
+    }
+
+        /* Login Forms */
+        p.playHeader{
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+            /* LOGIN BUTTON STYLING */
+            button#playButton{
+                display: inline-block;
+                border: none;
+                border-radius: 5px;
+                padding: 1rem 2rem;
+                margin: 0;
+                text-decoration: none;
+                background: #36622d;
+                color: #ffffff;
+                font-family: sans-serif;
+                font-size: 1rem;
+                cursor: pointer;
+                text-align: center;
+                transition: background 250ms ease-in-out, 
+                            transform 150ms ease;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            button#playButton:hover,
+            button#playButton:focus {
+                background: #7ff068;
+            }
+
+            button#playButton:focus {
+                outline-offset: -4px;
+            }
+
+            button#playButton:active {
+                transform: scale(0.99);
+            }
+    
+    /* Score Sheet Styles */
+
+    h2#scoreH2{
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+    }
+
+    div#scoreContainer{
+        border-radius: 1em;
+        background-color: #ebebeb;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+        height: 20em;
+        grid-area: b;
+
+        /* padding: 3px; */
+        overflow: scroll;
+
+    }
+
+    div.scoreListing{
+        border-radius: 5px;
+        background-color: #bebebe;
+        -moz-box-shadow: 0 0 3px #ccc;
+        -webkit-box-shadow: 0 0 3px #ccc;
+        box-shadow: 0 0 3px #ccc;
+        padding: .1em 1em 2em 1em;
+
+        height: 4em;
+        margin: .1em 1em 1em 1em;
+
+        display: grid;
+        justify-content: left;
+        grid-template-areas: 
+        "w w x x del"
+        "y y z z del";
+    }
+
+    p#liName{
+        grid-area: w;
+        text-decoration: underline;
+    }
+
+    div.scoreListing{
+        border: 5px solid black;
+        border-radius: 10px;   
+    }
+
+    ol#scoreList li:nth-of-type(1) div{
+        background-color: #C0B298;   
+    }
+
+    ol#scoreList li:nth-of-type(2) div{
+        background-color: #9e8c6a; 
+    }
+
+    ol#scoreList li:nth-of-type(3) div{
+        background-color: #997c45; 
+    }
+    
+    ol#scoreList li:nth-of-type(1) p#liName{
+        background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 1s ease-in-out infinite;
+        background-size: 400% 100%;
+    }
+
+    p#liScore{
+        grid-area: y;
+        text-decoration: underline;
+    }
+
+    ol#scoreList li:nth-of-type(1) p#liScore{
+        background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 1s ease-in-out infinite;
+        background-size: 400% 100%;
+    }
+
+    p#dataName{
+        margin-left: 2em;
+        grid-area: x;
+    }
+
+    ol#scoreList li:first-child p#dataName{
+        font-family: 'Cinzel', serif;
+    }
+
+    p#dataScore{
+        margin-left: 2em;
+        grid-area: z;
+    }
+
+    ol#scoreList li:first-child p#dataScore{
+        font-family: 'Cinzel', serif;
+    }
+
+    div#deleteContainer{
+        position: relative;
+        left: 500%;
+        top: 37%;
+        justify-self: right;
+        /* padding: 5px; */
+    }
+
+    button#deleteScoreButton {
+        grid-area: del;
+        height: 3em;
+        margin-right: 1em;
+    }
+
+    button#updateNameButton{
+        /* margin: 5px; */
+        height: 3em;
+    }
+
+    .button {
+        display: inline-block;
+        border: none;
+        border-radius: 5px;
+        /* padding: 1rem 2rem; */
+        /* margin: 0; */
+        text-decoration: none;
+        background: #36622d;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: background 250ms ease-in-out, 
+                    transform 150ms ease;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    
+    }
+    
+    .button:hover,
+    .button:focus {
+        background: #AB2346;
+    }
+    
+    .button:focus {
+        outline-offset: -4px;
+    }
+    
+    .button:active {
+        transform: scale(0.99);
+    }
+
+/* Game Container Style */
+div#gameContainer{
+    background-color: #A2A3BB;
+    border: none;
+    border-radius: 1em;
+    padding: 1rem 1rem;
+    margin: 1em;
+    text-decoration: none;
+
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Footer Styles */
+
+footer#footer{
+    color: wheat;
+    background-color: black;
+    font-size: .8em;
+
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+}
+
+/* Animations */
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

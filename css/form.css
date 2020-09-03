@@ -1,0 +1,81 @@
+/* Import CSS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&family=Sahitya&display=swap');
+
+/* Basic Body */
+body{
+    font-family: 'Sahitya', serif;
+}
+
+.hidden{
+    display: none !important;
+}
+
+/* Submit Button */
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #36622d;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: background 250ms ease-in-out, 
+                transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+.button:hover,
+.button:focus {
+    background: #AB2346;
+}
+
+.button:focus {
+    outline-offset: -4px;
+}
+
+.button:active {
+    transform: scale(0.99);
+}
+
+/* Score Div */
+div#scoreDiv{
+    display: grid;
+    grid-template-areas:"a a a"
+                        "b b b"
+                        "c c c";
+
+    border-radius: 1em;
+    background-color: #ebebeb;
+    -moz-box-shadow: 0 0 3px #ccc;
+    -webkit-box-shadow: 0 0 3px #ccc;
+    box-shadow: 0 0 3px #ccc;
+
+    padding: 1em;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 4px solid #36622d;  
+
+    background-color: #ebebeb;
+    padding-left: 10px;
+}
+
+input#score{
+    grid-area: a;
+}
+
+input#name{
+    grid-area: b;
+}
+
+input#scoreButton{
+    grid-area: c;
+}
